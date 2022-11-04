@@ -1,0 +1,26 @@
+{
+  "name": "burner-project",
+  "version": "1.0.0",
+  "description": "temporary projects",
+  "main": "server.js",
+  "scripts": {
+    "devStart": "nodemon node server.js"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "mongodb",
+    "rest",
+    "api"
+  ],
+  "author": "Lorenss-Teo-Lundgrenn",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mongoose": "^6.7.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
