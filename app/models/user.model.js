@@ -1,8 +1,9 @@
 const db = require("./index.js");
 
 const userSchema = db.mongoose.Schema({
-    name: String,
-    age: Number
+    name: { required: true,  type: String },
+    age: { required: true,  type: String },
+    alive: Boolean
 },
 { 
     timestamps: true 
