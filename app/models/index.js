@@ -1,11 +1,7 @@
-//database object
-const db = {};
-
-const dbConfig = require("../config/db.config.js");
 const mongoose = require("mongoose");
 mongoose.Promise = global.Promise;
 
+//database object
 exports.mongoose = mongoose;
-exports.url = dbConfig.url;
-
+exports.url = require("../config/db.config.js").url;
 exports.userModel = require("./user.model.js");

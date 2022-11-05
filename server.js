@@ -1,6 +1,6 @@
+//connect to database
 const db = require("./app/models/index.js");
-db.mongoose
-  .connect(db.url, {
+db.mongoose.connect(db.url, {
     useNewUrlParser: true,
     useUnifiedTopology: true
   })
@@ -25,9 +25,13 @@ var corsOptions = {
 };
 app.use(cors(corsOptions));
 
+//manage root get requests
 app.get("/", (req, res) => {
-  res.json({ message: "main page here" });
+  res.json({ message: "this is the root GET" });
 });
+
+//link user route
+require("./app/routes/user.routes")(app);
 
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
