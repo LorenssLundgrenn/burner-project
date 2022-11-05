@@ -1,7 +1,4 @@
-node rntm env
-express framework
-mongoose mongodb wrapper
-cors middleware
+This is a temporary project where I learn how to use express and mongoose
 
 sources:
 project tutorial https://www.bezkoder.com/node-express-mongodb-crud-rest-api/
